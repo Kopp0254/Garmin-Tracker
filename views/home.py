@@ -11,7 +11,8 @@ import data_service as ds
 def render():
     auth.require()
 
-    st.title("Health & Fitness Dashboard")
+    st.title("PaceMaker")
+    st.caption("Your Garmin health & fitness dashboard")
     dcol, _ = st.columns([1, 3])
     picked = dcol.date_input("Day", dt.date.today(), max_value=dt.date.today())
     st.caption(f"Snapshot for **{picked.strftime('%A, %B %d, %Y')}**")

@@ -82,7 +82,7 @@ def try_env_autologin():
 def require():
     """Guard for pages: stop with a friendly prompt if not signed in."""
     if not is_authed():
-        st.title("Welcome to your Garmin Dashboard")
+        st.title("Welcome to PaceMaker")
         st.info(
             "Sign in with your Garmin account using the panel in the sidebar, "
             "or click **Try demo** to explore with realistic sample data."

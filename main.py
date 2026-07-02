@@ -1,4 +1,4 @@
-"""Garmin Health & Fitness Dashboard - entry point.
+"""PaceMaker - Garmin health & fitness dashboard, entry point.
 
 Uses st.navigation so we can render a profile/login panel above the sidebar
 navigation. Log in with your Garmin account from the sidebar (or Try demo).
@@ -7,7 +7,7 @@ navigation. Log in with your Garmin account from the sidebar (or Try demo).
 import streamlit as st
 
 st.set_page_config(
-    page_title="Garmin Dashboard",
+    page_title="PaceMaker",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -39,7 +39,9 @@ st.markdown(
       div[data-testid="stSidebarHeader"]{ order:0; }
       div[data-testid="stSidebarUserContent"]{ order:1; }
       div[data-testid="stSidebarNav"]{ order:2; }
-      div[data-testid="stSidebarUserContent"]{ padding-top:0.5rem; }
+      /* Trim the default 96px bottom padding so the divider has balanced
+         space above and below now that the nav sits beneath this block. */
+      div[data-testid="stSidebarUserContent"]{ padding-top:0.5rem !important; padding-bottom:2rem !important; }
     </style>
     """,
     unsafe_allow_html=True,

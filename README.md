@@ -1,4 +1,4 @@
-# Garmin Health & Fitness Dashboard
+# PaceMaker
 
 A multi-page **Streamlit** dashboard that connects to your real Garmin account,
 pulls your health and fitness metrics, and includes a **Claude-powered AI

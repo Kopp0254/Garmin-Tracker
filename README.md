@@ -1,5 +1,7 @@
 # PaceMaker
 
+Visit at pacemaker.streamlit.app
+
 A multi-page **Streamlit** dashboard that connects to your real Garmin account,
 pulls your health and fitness metrics, and includes a **Claude-powered AI
 assistant** that interprets your trends.
